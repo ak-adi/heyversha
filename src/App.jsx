@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 const messages = [
@@ -549,6 +550,9 @@ function App() {
         <p>Made especially for Versha</p>
         <span className="footer-sub">Take care of yourself today 🌸</span>
       </footer>
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
